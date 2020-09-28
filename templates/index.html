@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!--===============================
+=            Hero Area            =
+================================-->
+
+<section class="hero-area bg-1 text-center overly">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Header Contetnt -->
+				<div class="content-block">
+					<h1>Book a Cottage Near Your favorite holiday spot </h1>
+					<p>Join the millions who choose their AirAnB deals from our portal <br> everyday around the world</p>
+					<div class="short-popular-category-list text-center">
+						<h2>Popular Category</h2>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="category.html"><i class="fa fa-bed"></i> Hotel</a></li>
+							<li class="list-inline-item">
+								<a href="category.html"><i class="fa fa-grav"></i> Fitness</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="category.html"><i class="fa fa-car"></i> Cars</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="category.html"><i class="fa fa-cutlery"></i> Restaurants</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="category.html"><i class="fa fa-coffee"></i> Cafe</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+             
+
+				
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+
+<!--====================================
+=            Call to Action            =
+=====================================-->
+<br>
+<br>
+<br>
+<section class="call-to-action overly bg-3 section-sm">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row justify-content-md-center text-center">
+			<div class="col-md-8">
+				<div class="content-holder">
+					<h2>Start today to get more exposure and
+					grow your business</h2>
+					<ul class="list-inline mt-30">
+						<button class="btn btn-success"><li class="list-inline-item"><a class="dropdown-item" href="{{url_for('viewlisting')}}">View Listing</a></li></button>
+						<button class="btn btn-success"><li class="list-inline-item"><a class="dropdown-item" href="{{url_for('addlisting')}}">Add Listing</a></li></button>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+{% endblock %}
